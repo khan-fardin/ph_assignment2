@@ -74,11 +74,10 @@ nav li:hover{
     color: black;
     margin: 24px auto;
 }
-.banner-img{}
-button{
+.banner-button{
     background-color: black;
 }
-button:hover{
+.banner-button:hover{
     background-color: orangered;
 }
 
@@ -118,4 +117,8 @@ button:hover{
         font-size: 0.875rem;
     }
     .banner-img{width: 90%; margin: 20px auto;}
+    .banner-button{
+        display: block;
+        margin: 20px auto;
+    }
 }
