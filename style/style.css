@@ -1,0 +1,74 @@
+
+.quicksand{
+    font-family: "Quicksand", serif;
+}
+.raleway{
+    font-family: "Raleway", serif;
+}
+/* ///common styles/// */
+button{
+    font-size: 20px; font-weight: 600;
+    color: white;
+    background-color: orange;
+    border: none; border-radius: 12px;
+    width: 197px; height: 50px;
+}
+button:hover{
+    background-color: orangered;
+}
+/* ////nav bar//// */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 140px;
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+.nav-logo{
+    width: 62px; height: 62px;
+}
+nav h1{
+    font-size: 2rem; font-weight: bold;
+    color: black;
+    margin: 0;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.25rem; font-weight: 600;
+}
+nav li:hover{
+    transform: rotate(25deg);
+}
+.nav-menu{
+    display: none;
+}
+
+
+@media screen and (max-width:576px) {
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin:auto;
+        border-bottom: 1px orange solid;
+    }
+    nav ul{display: none;}
+    nav h1{display: none;}
+    button{display: none;}
+    .nav-menu{
+        display: flex;
+        width: 50px;
+        margin: 10px;
+    }
+}
