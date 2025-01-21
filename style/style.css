@@ -335,7 +335,7 @@ footer > div{
         margin: auto;
     }
     .banner-text{
-        max-width: fit-content;
+        max-width: 90%;
         text-align: center;
         margin: 20px auto;
     }
@@ -344,7 +344,6 @@ footer > div{
     }
     .banner-text p{
         font-size: 0.875rem;
-        margin: auto 10px;
     }
     .banner-img{width: 90%; margin: 20px auto;}
     .banner-button{
@@ -363,6 +362,9 @@ footer > div{
     .curriculum-card{
         width: 70%;
         margin: 50px auto;
+    }
+    .curriculum-arrow{
+       display: none;
     }
     /* story section */
     .story-box1{display: none;}
