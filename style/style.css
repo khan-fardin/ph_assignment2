@@ -60,6 +60,7 @@ nav li:hover{
     align-items: center;
     justify-content: space-between;
     margin: auto 140px;
+    gap: 20px;
 }
 .banner-text{
     max-width: 600px;
@@ -83,7 +84,6 @@ nav li:hover{
 /* ///////curriculum section/////// */
 .curriculum{
     width: 100%;
-    background-image: url(../assets/bg.png);
 }
 .curriculum h1{
     font-size: 46px; font-weight: bold;
@@ -96,7 +96,7 @@ nav li:hover{
     align-items: center;
     justify-content: space-between;
     gap: 28px;
-    margin: auto 120px;
+    margin: auto 140px;
 }
 .curriculum-card{
     text-align: center;
@@ -143,6 +143,109 @@ nav li:hover{
 .curriculum-arrow p:hover{
     width: 60px; height: 60px;
 }
+/* ////////////story section///////////// */
+.stories{
+    background: linear-gradient(to bottom, #FFFFFF, rgba(254, 163, 1, 0.1));
+}
+.stories > h1{
+    font-size: 46px; font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.story-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 140px;
+}
+.story-box1{
+    width: 500px;
+    background-color: white;
+    border-radius: 16px;
+    padding-bottom: 40px;
+}
+.story-box1 > img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.story-box-date{
+    font-size: 16px; font-weight: 500;
+    color: white;
+    background-color: #3CD8E8;
+    width: 175px; height: 48px;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 38px;
+    position: relative;
+    z-index: 1;
+    margin-top: -30px;
+}
+.story-box1 h4{
+    font-size: 24px; font-weight: bold;
+    color: black;
+    margin-left: 38px;
+}
+.story-box1-desc{
+    font-size: 16px; font-weight: 500;
+    color: #666666;
+    margin-left: 38px;
+}
+.story-box2-main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+}
+.story-box2{
+    width: 250px;
+    background-color: white;
+    border-radius: 16px;
+    padding-bottom: 40px;
+    margin-left: 37px;
+}
+.story-box2 > img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+}
+.story-box-date2{
+    font-size: 1rem; font-weight: 500;
+    color: white;
+    background-color: rgba(149, 178, 38, 1);
+    max-width: fit-content;
+    height: 38px;
+    border-radius: 48px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    margin-left: 37px;
+    position: relative;
+    z-index: 1;
+    margin-top: -30px;
+}
+.story-box2-desc{
+    font-size: 1rem; font-weight: bold;
+    color: black;
+    margin-left: 37px;
+    margin-right: 10px;
+}
+.story-button{
+    display: flex;
+    justify-content: center;
+}
+.view-all{
+    background-color: black;
+    margin: 80px auto;
+}
+.view-all:hover{
+    background-color: orangered;
+}
 
 
 
@@ -155,7 +258,7 @@ footer > div{
     align-items: start;
     justify-content: space-between;
     padding-top: 130px; padding-bottom: 180px;
-    margin: auto 120px;
+    margin: auto 140px;
 }
 .about-desc{width: 380px;}
 .about-desc img{
@@ -203,6 +306,8 @@ footer > div{
 }
 
 
+
+
 @media screen and (max-width:576px) {
     /* nav bar */
     nav{
@@ -220,6 +325,9 @@ footer > div{
         width: 50px;
         margin: 10px;
     }
+    .nav-menu:hover{
+        transform: rotate(90deg);
+    }
     /* banner */
     .banner{
         display: flex;
@@ -236,6 +344,7 @@ footer > div{
     }
     .banner-text p{
         font-size: 0.875rem;
+        margin: auto 10px;
     }
     .banner-img{width: 90%; margin: 20px auto;}
     .banner-button{
@@ -252,11 +361,39 @@ footer > div{
         margin: auto;
     }
     .curriculum-card{
+        width: 70%;
         margin: 50px auto;
     }
-
-
-
+    /* story section */
+    .story-box1{display: none;}
+    .story-box2-main{
+        gap: 10px;
+    }
+    .story-box2{
+        width: 170px;
+        background-color: white;
+        border-radius: 16px;
+        padding-bottom: 40px;
+        margin-left: auto;
+    }
+    .story-box-date2{
+        font-size: 0.55rem;
+        height: 18px;
+        border-radius: 28px;
+        padding: 5px 20px;
+        margin-left: 5%;
+        margin-top: -20px;
+    }
+    .story-box2-desc{
+        font-size: 0.55rem;
+        margin-left: 5%;
+        margin-right: 2%;
+    }
+    .view-all{
+        display: block;
+        font-size: 1rem;
+        width: 140px; height: 30px;
+    }
     /* footer */
     footer > div{
         display: block;
